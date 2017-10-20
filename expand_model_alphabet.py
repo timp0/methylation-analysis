@@ -67,6 +67,8 @@ if args.alphabet == "cpg" or args.alphabet == "dcm":
     to_char = "C"
 elif args.alphabet == "dam":
     to_char = "A"
+elif args.alphabet == "tmod":
+    to_char = "T"
 else:
     sys.stderr.write("unknown alphabet: " + args.alphabet)
     sys.exit(1)

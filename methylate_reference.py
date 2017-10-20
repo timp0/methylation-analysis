@@ -25,6 +25,9 @@ elif args.recognition == "dam":
 elif args.recognition == "dcm":
     recognition_sites = ["CCAGG", "CCTGG"]
     recognition_sites_methylated = ["CMAGG", "CMTGG"]
+elif args.recognition == "uracil":
+    recognition_sites = ["T"]
+    recognition_site_methylated = ["U"]
 else:
     sys.stderr.write("unknown recognition: " + args.recognition)
     sys.exit(1)

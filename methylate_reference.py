@@ -25,6 +25,9 @@ elif args.recognition == "dam":
 elif args.recognition == "dcm":
     recognition_sites = ["CCAGG", "CCTGG"]
     recognition_sites_methylated = ["CMAGG", "CMTGG"]
+elif args.recognition == "sin395":
+    recognition_sites = ["GATC"]
+    recognition_sites_methylated = ["GATM"]
 elif args.recognition == "uracil":
     recognition_sites = ["T"]
     recognition_site_methylated = ["U"]

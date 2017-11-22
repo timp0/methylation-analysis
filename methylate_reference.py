@@ -25,6 +25,18 @@ elif args.recognition == "dam":
 elif args.recognition == "dcm":
     recognition_sites = ["CCAGG", "CCTGG"]
     recognition_sites_methylated = ["CMAGG", "CMTGG"]
+elif args.recognition == "hinfI":
+    recognition_sites = ["GAATC", "GACTC", "GAGTC", "GATTC"]
+    recognition_sites_methylated = ["GMATC", "GMCTC","GMGTC", "GMTTC"]
+elif args.recognition == "fnu4h":
+    recognition_sites = ["GCAGC", "GCCGC", "GCGGC", "GCTGC"]
+    recognition_sites_methylated = ["GCAGM", "GCCGM", "GCGGM", "GCTGM"]
+elif args.recognition == "sdeaII":
+    recognition_sites = ["CCAGGC", "CCCGGC", "CCGGGC", "CCTGGC"]
+    recognition_sites_methylated = ["CCAGGM", "CCCGGM", "CCGGGM", "CCTGGM"]
+elif args.recognition == "pspjdri":
+    recognition_sites = ["CCGG"]
+    recognition_sites_methylated = ["MCGG"]
 elif args.recognition == "sin395":
     recognition_sites = ["GATC"]
     recognition_sites_methylated = ["GATM"]

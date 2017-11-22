@@ -63,9 +63,9 @@ to_char = "N"
 
 # Set up a translation table which will make unmethylated
 # versions of the k-mers containing methylation sites.
-if args.alphabet in ["cpg", "dcm", "sin395"]:
+if args.alphabet in ["cpg", "dcm", "sin395", 'pspjdri', 'fnu4h', 'sdeaII']:
     to_char = "C"
-elif args.alphabet == "dam":
+elif args.alphabet in ["hinfI", "dam"]:
     to_char = "A"
 elif args.alphabet == "tmod":
     to_char = "T"
